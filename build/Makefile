@@ -511,19 +511,6 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named Sputnic
-
-# Build rule for target.
-Sputnic: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Sputnic
-.PHONY : Sputnic
-
-# fast build rule for target.
-Sputnic/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sputnic.dir/build.make CMakeFiles/Sputnic.dir/build
-.PHONY : Sputnic/fast
-
-#=============================================================================
 # Target rules for targets named sgpsdp
 
 # Build rule for target.
@@ -535,6 +522,19 @@ sgpsdp: cmake_check_build_system
 sgpsdp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgpsdp.dir/build.make CMakeFiles/sgpsdp.dir/build
 .PHONY : sgpsdp/fast
+
+#=============================================================================
+# Target rules for targets named Sputnic
+
+# Build rule for target.
+Sputnic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Sputnic
+.PHONY : Sputnic
+
+# fast build rule for target.
+Sputnic/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sputnic.dir/build.make CMakeFiles/Sputnic.dir/build
+.PHONY : Sputnic/fast
 
 Sputnic.o: Sputnic.cpp.o
 .PHONY : Sputnic.o

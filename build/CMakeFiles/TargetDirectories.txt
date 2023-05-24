@@ -26,8 +26,8 @@
 /home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/ContinuousCoverage.dir
 /home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/ContinuousMemCheck.dir
 /home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/ContinuousSubmit.dir
-/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/Sputnic.dir
 /home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/sgpsdp.dir
+/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/Sputnic.dir
 /home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/package.dir
 /home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/package_source.dir
 /home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/test.dir

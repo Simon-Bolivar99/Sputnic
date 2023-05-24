@@ -63,8 +63,8 @@ CMAKE_BINARY_DIR = "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build"
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Sputnic.dir/all
 all: CMakeFiles/sgpsdp.dir/all
+all: CMakeFiles/Sputnic.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -100,8 +100,8 @@ clean: CMakeFiles/ContinuousTest.dir/clean
 clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
-clean: CMakeFiles/Sputnic.dir/clean
 clean: CMakeFiles/sgpsdp.dir/clean
+clean: CMakeFiles/Sputnic.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -833,32 +833,6 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 .PHONY : CMakeFiles/ContinuousSubmit.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Sputnic.dir
-
-# All Build rule for target.
-CMakeFiles/Sputnic.dir/all: CMakeFiles/sgpsdp.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sputnic.dir/build.make CMakeFiles/Sputnic.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sputnic.dir/build.make CMakeFiles/Sputnic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" --progress-num=1,2 "Built target Sputnic"
-.PHONY : CMakeFiles/Sputnic.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Sputnic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Sputnic.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" 0
-.PHONY : CMakeFiles/Sputnic.dir/rule
-
-# Convenience name for target.
-Sputnic: CMakeFiles/Sputnic.dir/rule
-.PHONY : Sputnic
-
-# clean rule for target.
-CMakeFiles/Sputnic.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sputnic.dir/build.make CMakeFiles/Sputnic.dir/clean
-.PHONY : CMakeFiles/Sputnic.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/sgpsdp.dir
 
 # All Build rule for target.
@@ -883,6 +857,32 @@ sgpsdp: CMakeFiles/sgpsdp.dir/rule
 CMakeFiles/sgpsdp.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgpsdp.dir/build.make CMakeFiles/sgpsdp.dir/clean
 .PHONY : CMakeFiles/sgpsdp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Sputnic.dir
+
+# All Build rule for target.
+CMakeFiles/Sputnic.dir/all: CMakeFiles/sgpsdp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sputnic.dir/build.make CMakeFiles/Sputnic.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sputnic.dir/build.make CMakeFiles/Sputnic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" --progress-num=1,2 "Built target Sputnic"
+.PHONY : CMakeFiles/Sputnic.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Sputnic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Sputnic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" 0
+.PHONY : CMakeFiles/Sputnic.dir/rule
+
+# Convenience name for target.
+Sputnic: CMakeFiles/Sputnic.dir/rule
+.PHONY : Sputnic
+
+# clean rule for target.
+CMakeFiles/Sputnic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sputnic.dir/build.make CMakeFiles/Sputnic.dir/clean
+.PHONY : CMakeFiles/Sputnic.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
