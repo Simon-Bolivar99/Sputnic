@@ -1,1 +1,0 @@
-/usr/bin/g++ -g -rdynamic CMakeFiles/Sputnic.dir/Sputnic.cpp.o -o Sputnic  libsgpsdp.a 

@@ -1,7 +1,22 @@
 [
 {
   "directory": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/Sputnic.dir/Sputnic.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/Sputnic.cpp\"",
-  "file": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/Sputnic.cpp"
+  "command": "/usr/bin/c++   -O3 -DNDEBUG -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp4sdp4.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp4sdp4.cpp\"",
+  "file": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp4sdp4.cpp"
+},
+{
+  "directory": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build",
+  "command": "/usr/bin/c++   -O3 -DNDEBUG -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp_math.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_math.cpp\"",
+  "file": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_math.cpp"
+},
+{
+  "directory": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build",
+  "command": "/usr/bin/c++   -O3 -DNDEBUG -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp_time.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_time.cpp\"",
+  "file": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_time.cpp"
+},
+{
+  "directory": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build",
+  "command": "/usr/bin/c++   -O3 -DNDEBUG -o CMakeFiles/main.dir/main.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/main.cpp\"",
+  "file": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/main.cpp"
 }
 ]
