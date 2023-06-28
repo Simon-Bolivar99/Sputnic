@@ -7,17 +7,17 @@ namespace po = boost::program_options;
 
 /*
 [-h| --help ]                        Help menu
-[-f| --file ] ARG (std::string)      Input file
-[-s| --start] ARG (double)           Start time
-[-e| --end  ] ARG (double)           End time
+[-f| --file ] ARG (str)              Input file
+[-s| --start] ARG (str)              Start time
+[-e| --end  ] ARG (str)              End time
 [-c| --crd  ] ARG (str)              latitude longitude height
+[-d| --deg  ] AGR (str)
 */
 
 class TerminalOptions {
     public:
     enum statusReturn{
         OPTS_SUCESS,
-        OPTS_VERSION,
         OPTS_HELP,
         OPTS_FAILURE
 
@@ -27,10 +27,11 @@ class TerminalOptions {
     ~TerminalOptions();
     statusReturn parse(int argc, char * argv[]);
 
-    inline const std::string & getInputFile() const;
-    inline const double getStartTime() {return startTime;};
-    inline const double getEndTime() {return endTime;};
-    inline const std::string & getCoord() const;
+    inline const std::string & getInputFile() const {return myInputFile;}
+    inline const std::string & getStartTime() {return myStartDateTime;}
+    inline const std::string & getEndTime() {return myEndDateTime;}
+    inline const std::string & getCoord() {return myCoord;};
+    inline const double & getDegress(){return myDegress;}
 
     protected:
     void setup();
@@ -42,16 +43,15 @@ class TerminalOptions {
 
     po::options_description myOptions;
     std::string myInputFile;
-    double startTime;
-    double endTime;
+    std::string myStartDateTime;
+    std::string myEndDateTime;
+    std::string myCoord;
+    double myDegress;
 
 
 
 
 };
-inline const std::string & TerminalOptions::getInputFile() const{
-    static const std::string emptyString;
-    return (0 < myInputFile.size())? myInputFile : emptyString;
-}
+
 
 #endif //_TERMINAL_OPTIONS_HPP_

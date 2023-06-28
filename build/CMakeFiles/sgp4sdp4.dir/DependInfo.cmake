@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/TerminalOptions.cpp" "CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o" "gcc" "CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o.d"
   "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp4sdp4.cpp" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp4sdp4.cpp.o" "gcc" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp4sdp4.cpp.o.d"
   "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_math.cpp" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_math.cpp.o" "gcc" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_math.cpp.o.d"
   "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_time.cpp" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_time.cpp.o" "gcc" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_time.cpp.o.d"

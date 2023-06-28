@@ -83,12 +83,12 @@ clean: CMakeFiles/main.dir/clean
 CMakeFiles/sgp4sdp4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4sdp4.dir/build.make CMakeFiles/sgp4sdp4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4sdp4.dir/build.make CMakeFiles/sgp4sdp4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" --progress-num=3,4,5,6 "Built target sgp4sdp4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" --progress-num=3,4,5,6,7 "Built target sgp4sdp4"
 .PHONY : CMakeFiles/sgp4sdp4.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sgp4sdp4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sgp4sdp4.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" 0
 .PHONY : CMakeFiles/sgp4sdp4.dir/rule
@@ -114,7 +114,7 @@ CMakeFiles/main.dir/all: CMakeFiles/sgp4sdp4.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" 6
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" 0
 .PHONY : CMakeFiles/main.dir/rule

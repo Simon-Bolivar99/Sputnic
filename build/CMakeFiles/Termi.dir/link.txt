@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTermi.a CMakeFiles/Termi.dir/lib_src/sgp4sdp4.cpp.o CMakeFiles/Termi.dir/lib_src/sgp_math.cpp.o CMakeFiles/Termi.dir/lib_src/sgp_time.cpp.o CMakeFiles/Termi.dir/lib_src/TerminalOptions.cpp.o
+/usr/bin/ranlib libTermi.a

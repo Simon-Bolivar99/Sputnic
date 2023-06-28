@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o"
+  "CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o.d"
   "CMakeFiles/sgp4sdp4.dir/lib_src/sgp4sdp4.cpp.o"
   "CMakeFiles/sgp4sdp4.dir/lib_src/sgp4sdp4.cpp.o.d"
   "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_math.cpp.o"

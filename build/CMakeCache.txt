@@ -17,6 +17,16 @@
 //Build the testing tree.
 BUILD_TESTING:BOOL=ON
 
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0
+
+Boost_FILESYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=/usr/include
+
+Boost_PROGRAM_OPTIONS_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.74.0
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -314,11 +324,40 @@ Sputnic_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Sputnic_SOURCE_DIR:STATIC=/home/artyom/Документы/C++ PROJECT/SPUTNIC
 
+//The directory containing a CMake configuration file for boost_algo.
+boost_algo_DIR:PATH=boost_algo_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for boost_algorit.
+boost_algorit_DIR:PATH=boost_algorit_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for boost_algorith.
+boost_algorith_DIR:PATH=boost_algorith_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for boost_algorithm.
+boost_algorithm_DIR:PATH=boost_algorithm_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for boost_files.
+boost_files_DIR:PATH=boost_files_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for boost_filesystem.
+boost_filesystem_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.74.0
+
+//The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.74.0
+
+//The directory containing a CMake configuration file for boost_path.
+boost_path_DIR:PATH=boost_path_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for boost_program_options.
+boost_program_options_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_program_options-1.74.0
+
 
 ########################
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -504,6 +543,8 @@ CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
 CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
+//Details about finding Boost
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake][cfound components: program_options filesystem ][v1.74.0()]
 //ADVANCED property for variable: GITCOMMAND
 GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MAKECOMMAND
@@ -514,4 +555,10 @@ MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
 MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SITE
 SITE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_filesystem_DIR
+boost_filesystem_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_headers_DIR
+boost_headers_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_program_options_DIR
+boost_program_options_DIR-ADVANCED:INTERNAL=1
 

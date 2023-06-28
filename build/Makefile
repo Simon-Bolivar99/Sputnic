@@ -162,6 +162,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+lib_src/TerminalOptions.o: lib_src/TerminalOptions.cpp.o
+.PHONY : lib_src/TerminalOptions.o
+
+# target to build an object file
+lib_src/TerminalOptions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4sdp4.dir/build.make CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o
+.PHONY : lib_src/TerminalOptions.cpp.o
+
+lib_src/TerminalOptions.i: lib_src/TerminalOptions.cpp.i
+.PHONY : lib_src/TerminalOptions.i
+
+# target to preprocess a source file
+lib_src/TerminalOptions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4sdp4.dir/build.make CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.i
+.PHONY : lib_src/TerminalOptions.cpp.i
+
+lib_src/TerminalOptions.s: lib_src/TerminalOptions.cpp.s
+.PHONY : lib_src/TerminalOptions.s
+
+# target to generate assembly for a file
+lib_src/TerminalOptions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4sdp4.dir/build.make CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.s
+.PHONY : lib_src/TerminalOptions.cpp.s
+
 lib_src/sgp4sdp4.o: lib_src/sgp4sdp4.cpp.o
 .PHONY : lib_src/sgp4sdp4.o
 
@@ -270,6 +294,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... main"
 	@echo "... sgp4sdp4"
+	@echo "... lib_src/TerminalOptions.o"
+	@echo "... lib_src/TerminalOptions.i"
+	@echo "... lib_src/TerminalOptions.s"
 	@echo "... lib_src/sgp4sdp4.o"
 	@echo "... lib_src/sgp4sdp4.i"
 	@echo "... lib_src/sgp4sdp4.s"

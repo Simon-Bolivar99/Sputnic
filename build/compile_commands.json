@@ -16,7 +16,12 @@
 },
 {
   "directory": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build",
-  "command": "/usr/bin/c++   -O3 -DNDEBUG -o CMakeFiles/main.dir/main.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/main.cpp\"",
+  "command": "/usr/bin/c++   -O3 -DNDEBUG -o CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/TerminalOptions.cpp\"",
+  "file": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/TerminalOptions.cpp"
+},
+{
+  "directory": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK  -O3 -DNDEBUG -o CMakeFiles/main.dir/main.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/main.cpp\"",
   "file": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/main.cpp"
 }
 ]
