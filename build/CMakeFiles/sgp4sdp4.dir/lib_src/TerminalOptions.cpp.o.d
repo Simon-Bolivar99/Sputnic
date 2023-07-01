@@ -560,57 +560,136 @@ CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o: \
  /usr/include/boost/algorithm/string/classification.hpp \
  /usr/include/boost/algorithm/string/detail/classification.hpp \
  /usr/include/boost/algorithm/string/predicate_facade.hpp \
- /home/artyom/Документы/C++\ PROJECT/SPUTNIC/lib_src/TerminalOptions.hpp \
- /usr/include/boost/program_options.hpp \
- /usr/include/boost/program_options/options_description.hpp \
- /usr/include/boost/program_options/config.hpp \
- /usr/include/boost/program_options/errors.hpp \
- /usr/include/boost/program_options/value_semantic.hpp \
- /usr/include/boost/any.hpp /usr/include/boost/type_index.hpp \
- /usr/include/boost/type_index/stl_type_index.hpp \
- /usr/include/boost/type_index/type_index_facade.hpp \
+ /usr/include/boost/date_time/posix_time/posix_time.hpp \
+ /usr/include/boost/date_time/compiler_config.hpp \
+ /usr/include/boost/date_time/locale_config.hpp \
+ /usr/include/boost/date_time/posix_time/ptime.hpp \
+ /usr/include/boost/date_time/posix_time/posix_time_system.hpp \
+ /usr/include/boost/date_time/posix_time/posix_time_config.hpp \
+ /usr/include/boost/config/no_tr1/cmath.hpp /usr/include/c++/11/cmath \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/tr1/gamma.tcc \
+ /usr/include/c++/11/tr1/special_function_util.h \
+ /usr/include/c++/11/tr1/bessel_function.tcc \
+ /usr/include/c++/11/tr1/beta_function.tcc \
+ /usr/include/c++/11/tr1/ell_integral.tcc \
+ /usr/include/c++/11/tr1/exp_integral.tcc \
+ /usr/include/c++/11/tr1/hypergeometric.tcc \
+ /usr/include/c++/11/tr1/legendre_function.tcc \
+ /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/11/tr1/poly_hermite.tcc \
+ /usr/include/c++/11/tr1/poly_laguerre.tcc \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /usr/include/boost/date_time/time_duration.hpp \
+ /usr/include/boost/date_time/special_defs.hpp \
+ /usr/include/boost/date_time/time_defs.hpp \
+ /usr/include/boost/operators.hpp \
+ /usr/include/boost/date_time/time_resolution_traits.hpp \
+ /usr/include/boost/date_time/int_adapter.hpp \
+ /usr/include/boost/date_time/gregorian/gregorian_types.hpp \
+ /usr/include/boost/date_time/date.hpp \
+ /usr/include/boost/date_time/year_month_day.hpp \
+ /usr/include/boost/date_time/period.hpp \
+ /usr/include/boost/date_time/gregorian/greg_calendar.hpp \
+ /usr/include/boost/date_time/gregorian/greg_weekday.hpp \
+ /usr/include/boost/date_time/constrained_value.hpp \
  /usr/include/boost/throw_exception.hpp \
  /usr/include/boost/assert/source_location.hpp \
  /usr/include/boost/current_function.hpp \
  /usr/include/boost/exception/exception.hpp \
- /usr/include/boost/core/demangle.hpp /usr/include/c++/11/cxxabi.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
- /usr/include/boost/function/function1.hpp \
- /usr/include/boost/function/detail/maybe_include.hpp \
- /usr/include/boost/function/function_template.hpp \
- /usr/include/boost/function/detail/prologue.hpp \
- /usr/include/boost/function/function_base.hpp \
- /usr/include/boost/integer.hpp /usr/include/boost/integer_fwd.hpp \
- /usr/include/boost/integer_traits.hpp \
- /usr/include/boost/type_traits/has_trivial_copy.hpp \
- /usr/include/boost/type_traits/is_copy_constructible.hpp \
- /usr/include/boost/type_traits/is_constructible.hpp \
- /usr/include/boost/type_traits/is_destructible.hpp \
- /usr/include/boost/type_traits/is_default_constructible.hpp \
- /usr/include/boost/type_traits/has_trivial_destructor.hpp \
- /usr/include/boost/type_traits/composite_traits.hpp \
- /usr/include/boost/type_traits/is_union.hpp /usr/include/boost/ref.hpp \
- /usr/include/boost/core/ref.hpp \
- /usr/include/boost/type_traits/alignment_of.hpp \
- /usr/include/boost/type_traits/enable_if.hpp \
- /usr/include/boost/function_equal.hpp \
- /usr/include/boost/function/function_fwd.hpp \
- /usr/include/boost/mem_fn.hpp /usr/include/boost/bind/mem_fn.hpp \
- /usr/include/boost/get_pointer.hpp \
- /usr/include/boost/config/no_tr1/memory.hpp \
- /usr/include/boost/bind/mem_fn_template.hpp \
- /usr/include/boost/bind/mem_fn_cc.hpp \
- /usr/include/boost/preprocessor/enum.hpp \
- /usr/include/boost/preprocessor/repetition/enum.hpp \
- /usr/include/boost/preprocessor/enum_params.hpp \
- /usr/include/boost/core/no_exceptions_support.hpp \
+ /usr/include/boost/type_traits/is_base_of.hpp \
+ /usr/include/boost/date_time/date_defs.hpp \
+ /usr/include/boost/date_time/gregorian/greg_day_of_year.hpp \
+ /usr/include/boost/date_time/gregorian_calendar.hpp \
+ /usr/include/boost/date_time/gregorian_calendar.ipp \
+ /usr/include/boost/date_time/gregorian/greg_ymd.hpp \
+ /usr/include/boost/date_time/gregorian/greg_day.hpp \
+ /usr/include/boost/date_time/gregorian/greg_year.hpp \
+ /usr/include/boost/date_time/gregorian/greg_month.hpp \
+ /usr/include/boost/date_time/gregorian/greg_duration.hpp \
+ /usr/include/boost/date_time/date_duration.hpp \
+ /usr/include/boost/date_time/date_duration_types.hpp \
+ /usr/include/boost/date_time/gregorian/greg_duration_types.hpp \
+ /usr/include/boost/date_time/gregorian/greg_date.hpp \
+ /usr/include/boost/date_time/adjust_functors.hpp \
+ /usr/include/boost/date_time/wrapping_int.hpp \
+ /usr/include/boost/date_time/date_generators.hpp \
+ /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
+ /usr/include/boost/date_time/date_clock_device.hpp \
+ /usr/include/boost/date_time/c_time.hpp \
+ /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/include/boost/date_time/date_iterator.hpp \
+ /usr/include/boost/date_time/time_system_split.hpp \
+ /usr/include/boost/date_time/time_system_counted.hpp \
+ /usr/include/boost/date_time/time.hpp \
+ /usr/include/boost/date_time/posix_time/date_duration_operators.hpp \
+ /usr/include/boost/date_time/posix_time/time_formatters.hpp \
+ /usr/include/boost/date_time/gregorian/gregorian.hpp \
+ /usr/include/boost/date_time/gregorian/conversion.hpp \
+ /usr/include/boost/date_time/gregorian/formatters.hpp \
+ /usr/include/boost/date_time/date_formatting.hpp \
+ /usr/include/boost/date_time/iso_format.hpp \
+ /usr/include/boost/date_time/parse_format_base.hpp \
+ /usr/include/c++/11/iomanip /usr/include/c++/11/bits/quoted_string.h \
+ /usr/include/boost/date_time/date_format_simple.hpp \
+ /usr/include/boost/date_time/gregorian/gregorian_io.hpp \
+ /usr/include/boost/date_time/date_facet.hpp \
+ /usr/include/boost/algorithm/string/replace.hpp \
+ /usr/include/boost/algorithm/string/find_format.hpp \
+ /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
+ /usr/include/c++/11/bits/deque.tcc \
+ /usr/include/boost/algorithm/string/concept.hpp \
+ /usr/include/boost/algorithm/string/detail/find_format.hpp \
+ /usr/include/boost/algorithm/string/detail/find_format_store.hpp \
+ /usr/include/boost/algorithm/string/detail/replace_storage.hpp \
+ /usr/include/boost/algorithm/string/sequence_traits.hpp \
+ /usr/include/boost/algorithm/string/yes_no_type.hpp \
+ /usr/include/boost/algorithm/string/detail/sequence.hpp \
+ /usr/include/boost/mpl/logical.hpp \
+ /usr/include/boost/algorithm/string/detail/find_format_all.hpp \
+ /usr/include/boost/algorithm/string/finder.hpp \
+ /usr/include/boost/algorithm/string/constants.hpp \
+ /usr/include/boost/algorithm/string/detail/finder.hpp \
+ /usr/include/boost/algorithm/string/compare.hpp \
+ /usr/include/boost/algorithm/string/formatter.hpp \
+ /usr/include/boost/algorithm/string/detail/formatter.hpp \
+ /usr/include/boost/algorithm/string/detail/util.hpp \
+ /usr/include/boost/date_time/special_values_formatter.hpp \
+ /usr/include/boost/date_time/period_formatter.hpp \
+ /usr/include/boost/date_time/period_parser.hpp \
+ /usr/include/boost/date_time/string_parse_tree.hpp \
+ /usr/include/boost/algorithm/string/case_conv.hpp \
+ /usr/include/boost/iterator/transform_iterator.hpp \
+ /usr/include/boost/utility/result_of.hpp \
+ /usr/include/boost/preprocessor/iteration/iterate.hpp \
+ /usr/include/boost/preprocessor/slot/slot.hpp \
+ /usr/include/boost/preprocessor/slot/detail/def.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_shifted_params.hpp \
+ /usr/include/boost/preprocessor/facilities/intercept.hpp \
+ /usr/include/boost/type_traits/type_identity.hpp \
+ /usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp \
+ /usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp \
+ /usr/include/boost/preprocessor/slot/detail/shared.hpp \
+ /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp \
+ /usr/include/boost/utility/detail/result_of_iterate.hpp \
+ /usr/include/boost/algorithm/string/detail/case_conv.hpp \
+ /usr/include/boost/date_time/string_convert.hpp \
+ /usr/include/boost/date_time/date_generator_formatter.hpp \
+ /usr/include/boost/date_time/date_generator_parser.hpp \
+ /usr/include/boost/date_time/format_date_parser.hpp \
  /usr/include/boost/lexical_cast.hpp \
  /usr/include/boost/lexical_cast/bad_lexical_cast.hpp \
  /usr/include/boost/lexical_cast/try_lexical_convert.hpp \
- /usr/include/boost/type_traits/type_identity.hpp \
  /usr/include/boost/lexical_cast/detail/is_character.hpp \
  /usr/include/boost/lexical_cast/detail/converter_numeric.hpp \
- /usr/include/boost/type_traits/is_base_of.hpp \
  /usr/include/boost/type_traits/is_float.hpp \
  /usr/include/boost/numeric/conversion/cast.hpp \
  /usr/include/boost/type.hpp \
@@ -644,28 +723,6 @@ CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o: \
  /usr/include/boost/mpl/less.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp \
  /usr/include/boost/numeric/conversion/converter_policies.hpp \
- /usr/include/boost/config/no_tr1/cmath.hpp /usr/include/c++/11/cmath \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/tr1/gamma.tcc \
- /usr/include/c++/11/tr1/special_function_util.h \
- /usr/include/c++/11/tr1/bessel_function.tcc \
- /usr/include/c++/11/tr1/beta_function.tcc \
- /usr/include/c++/11/tr1/ell_integral.tcc \
- /usr/include/c++/11/tr1/exp_integral.tcc \
- /usr/include/c++/11/tr1/hypergeometric.tcc \
- /usr/include/c++/11/tr1/legendre_function.tcc \
- /usr/include/c++/11/tr1/modified_bessel_func.tcc \
- /usr/include/c++/11/tr1/poly_hermite.tcc \
- /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /usr/include/boost/numeric/conversion/detail/converter.hpp \
  /usr/include/boost/numeric/conversion/bounds.hpp \
  /usr/include/boost/numeric/conversion/detail/bounds.hpp \
@@ -677,6 +734,7 @@ CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o: \
  /usr/include/boost/type_traits/has_left_shift.hpp \
  /usr/include/boost/type_traits/has_right_shift.hpp \
  /usr/include/boost/detail/lcast_precision.hpp \
+ /usr/include/boost/integer_traits.hpp \
  /usr/include/boost/lexical_cast/detail/widest_char.hpp \
  /usr/include/boost/array.hpp /usr/include/boost/swap.hpp \
  /usr/include/boost/core/swap.hpp \
@@ -685,7 +743,6 @@ CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o: \
  /usr/include/boost/move/detail/std_ns_begin.hpp \
  /usr/include/boost/move/detail/std_ns_end.hpp \
  /usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp \
- /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
  /usr/include/boost/lexical_cast/detail/lcast_char_constants.hpp \
  /usr/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp \
  /usr/include/boost/noncopyable.hpp \
@@ -750,8 +807,7 @@ CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o: \
  /usr/include/boost/mpl/find.hpp /usr/include/boost/mpl/find_if.hpp \
  /usr/include/boost/mpl/aux_/find_if_pred.hpp \
  /usr/include/boost/mpl/aux_/iter_apply.hpp \
- /usr/include/boost/mpl/iter_fold_if.hpp \
- /usr/include/boost/mpl/logical.hpp /usr/include/boost/mpl/pair.hpp \
+ /usr/include/boost/mpl/iter_fold_if.hpp /usr/include/boost/mpl/pair.hpp \
  /usr/include/boost/mpl/aux_/iter_fold_if_impl.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_if_impl.hpp \
  /usr/include/boost/mpl/same_as.hpp /usr/include/boost/mpl/remove_if.hpp \
@@ -847,18 +903,18 @@ CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o: \
  /usr/include/boost/math/special_functions/fpclassify.hpp \
  /usr/include/boost/math/tools/real_cast.hpp \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/quadmath.h \
+ /usr/include/boost/integer.hpp /usr/include/boost/integer_fwd.hpp \
  /usr/include/boost/detail/basic_pointerbuf.hpp \
- /usr/include/boost/program_options/detail/value_semantic.hpp \
- /usr/include/boost/function.hpp \
- /usr/include/boost/preprocessor/iterate.hpp \
- /usr/include/boost/preprocessor/iteration/iterate.hpp \
- /usr/include/boost/preprocessor/slot/slot.hpp \
- /usr/include/boost/preprocessor/slot/detail/def.hpp \
- /usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp \
- /usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp \
- /usr/include/boost/preprocessor/slot/detail/shared.hpp \
- /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp \
- /usr/include/boost/function/detail/function_iterate.hpp \
+ /usr/include/boost/date_time/strings_from_facet.hpp \
+ /usr/include/boost/date_time/special_values_parser.hpp \
+ /usr/include/boost/date_time/gregorian/parsers.hpp \
+ /usr/include/boost/date_time/date_parsing.hpp \
+ /usr/include/boost/tokenizer.hpp /usr/include/boost/token_iterator.hpp \
+ /usr/include/boost/iterator/minimum_category.hpp \
+ /usr/include/boost/token_functions.hpp \
+ /usr/include/boost/date_time/find_match.hpp \
+ /usr/include/boost/date_time/posix_time/posix_time_types.hpp \
+ /usr/include/boost/date_time/time_clock.hpp \
  /usr/include/boost/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/detail/shared_count.hpp \
@@ -878,6 +934,63 @@ CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o: \
  /usr/include/boost/config/pragma_message.hpp \
  /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
  /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
+ /usr/include/boost/date_time/microsec_time_clock.hpp \
+ /usr/include/boost/date_time/posix_time/posix_time_duration.hpp \
+ /usr/include/boost/date_time/posix_time/time_period.hpp \
+ /usr/include/boost/date_time/time_iterator.hpp \
+ /usr/include/boost/date_time/dst_rules.hpp \
+ /usr/include/boost/date_time/time_formatting_streams.hpp \
+ /usr/include/boost/date_time/date_formatting_locales.hpp \
+ /usr/include/boost/date_time/date_names_put.hpp \
+ /usr/include/boost/date_time/time_parsing.hpp \
+ /usr/include/boost/date_time/posix_time/posix_time_io.hpp \
+ /usr/include/boost/date_time/time_facet.hpp \
+ /usr/include/boost/algorithm/string/erase.hpp \
+ /usr/include/boost/date_time/posix_time/conversion.hpp \
+ /usr/include/boost/date_time/filetime_functions.hpp \
+ /usr/include/boost/date_time/posix_time/time_parsers.hpp \
+ /home/artyom/Документы/C++\ PROJECT/SPUTNIC/lib_src/TerminalOptions.hpp \
+ /usr/include/boost/program_options.hpp \
+ /usr/include/boost/program_options/options_description.hpp \
+ /usr/include/boost/program_options/config.hpp \
+ /usr/include/boost/program_options/errors.hpp \
+ /usr/include/boost/program_options/value_semantic.hpp \
+ /usr/include/boost/any.hpp /usr/include/boost/type_index.hpp \
+ /usr/include/boost/type_index/stl_type_index.hpp \
+ /usr/include/boost/type_index/type_index_facade.hpp \
+ /usr/include/boost/core/demangle.hpp /usr/include/c++/11/cxxabi.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
+ /usr/include/boost/function/function1.hpp \
+ /usr/include/boost/function/detail/maybe_include.hpp \
+ /usr/include/boost/function/function_template.hpp \
+ /usr/include/boost/function/detail/prologue.hpp \
+ /usr/include/boost/function/function_base.hpp \
+ /usr/include/boost/type_traits/has_trivial_copy.hpp \
+ /usr/include/boost/type_traits/is_copy_constructible.hpp \
+ /usr/include/boost/type_traits/is_constructible.hpp \
+ /usr/include/boost/type_traits/is_destructible.hpp \
+ /usr/include/boost/type_traits/is_default_constructible.hpp \
+ /usr/include/boost/type_traits/has_trivial_destructor.hpp \
+ /usr/include/boost/type_traits/composite_traits.hpp \
+ /usr/include/boost/type_traits/is_union.hpp /usr/include/boost/ref.hpp \
+ /usr/include/boost/core/ref.hpp \
+ /usr/include/boost/type_traits/alignment_of.hpp \
+ /usr/include/boost/type_traits/enable_if.hpp \
+ /usr/include/boost/function_equal.hpp \
+ /usr/include/boost/function/function_fwd.hpp \
+ /usr/include/boost/mem_fn.hpp /usr/include/boost/bind/mem_fn.hpp \
+ /usr/include/boost/get_pointer.hpp \
+ /usr/include/boost/config/no_tr1/memory.hpp \
+ /usr/include/boost/bind/mem_fn_template.hpp \
+ /usr/include/boost/bind/mem_fn_cc.hpp \
+ /usr/include/boost/preprocessor/enum.hpp \
+ /usr/include/boost/preprocessor/repetition/enum.hpp \
+ /usr/include/boost/preprocessor/enum_params.hpp \
+ /usr/include/boost/core/no_exceptions_support.hpp \
+ /usr/include/boost/program_options/detail/value_semantic.hpp \
+ /usr/include/boost/function.hpp \
+ /usr/include/boost/preprocessor/iterate.hpp \
+ /usr/include/boost/function/detail/function_iterate.hpp \
  /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h \
  /usr/include/boost/program_options/positional_options.hpp \

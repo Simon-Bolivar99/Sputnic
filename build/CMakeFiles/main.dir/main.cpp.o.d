@@ -150,7 +150,11 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/fstream \
+ /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc \
  /home/artyom/Документы/C++\ PROJECT/SPUTNIC/lib_src/TerminalOptions.hpp \
  /usr/include/boost/program_options.hpp \
  /usr/include/boost/program_options/options_description.hpp \
@@ -626,8 +630,7 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
- /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/libintl.h /usr/include/c++/11/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc \
  /usr/include/boost/lexical_cast/detail/lcast_char_constants.hpp \

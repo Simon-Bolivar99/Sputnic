@@ -10,7 +10,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/TerminalOptions.cpp" "CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o" "gcc" "CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o.d"
   "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp4sdp4.cpp" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp4sdp4.cpp.o" "gcc" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp4sdp4.cpp.o.d"
+  "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_in.cpp" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.o" "gcc" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.o.d"
   "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_math.cpp" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_math.cpp.o" "gcc" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_math.cpp.o.d"
+  "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_obs.cpp" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.o" "gcc" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.o.d"
   "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_time.cpp" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_time.cpp.o" "gcc" "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_time.cpp.o.d"
   )
 

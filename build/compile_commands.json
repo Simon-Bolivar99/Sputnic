@@ -1,27 +1,37 @@
 [
 {
   "directory": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build",
-  "command": "/usr/bin/c++   -O3 -DNDEBUG -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp4sdp4.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp4sdp4.cpp\"",
+  "command": "/usr/bin/c++  -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -O3 -DNDEBUG -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp4sdp4.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp4sdp4.cpp\"",
   "file": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp4sdp4.cpp"
 },
 {
   "directory": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build",
-  "command": "/usr/bin/c++   -O3 -DNDEBUG -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp_math.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_math.cpp\"",
+  "command": "/usr/bin/c++  -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -O3 -DNDEBUG -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp_math.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_math.cpp\"",
   "file": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_math.cpp"
 },
 {
   "directory": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build",
-  "command": "/usr/bin/c++   -O3 -DNDEBUG -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp_time.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_time.cpp\"",
+  "command": "/usr/bin/c++  -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -O3 -DNDEBUG -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp_time.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_time.cpp\"",
   "file": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_time.cpp"
 },
 {
   "directory": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build",
-  "command": "/usr/bin/c++   -O3 -DNDEBUG -o CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/TerminalOptions.cpp\"",
+  "command": "/usr/bin/c++  -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -O3 -DNDEBUG -o CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/TerminalOptions.cpp\"",
   "file": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/TerminalOptions.cpp"
 },
 {
   "directory": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build",
-  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK  -O3 -DNDEBUG -o CMakeFiles/main.dir/main.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/main.cpp\"",
+  "command": "/usr/bin/c++  -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -O3 -DNDEBUG -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_obs.cpp\"",
+  "file": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_obs.cpp"
+},
+{
+  "directory": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build",
+  "command": "/usr/bin/c++  -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -O3 -DNDEBUG -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_in.cpp\"",
+  "file": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_in.cpp"
+},
+{
+  "directory": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -O3 -DNDEBUG -o CMakeFiles/main.dir/main.cpp.o -c \"/home/artyom/Документы/C++ PROJECT/SPUTNIC/main.cpp\"",
   "file": "/home/artyom/Документы/C++ PROJECT/SPUTNIC/main.cpp"
 }
 ]

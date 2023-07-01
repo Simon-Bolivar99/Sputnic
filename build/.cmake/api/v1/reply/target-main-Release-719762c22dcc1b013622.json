@@ -11,7 +11,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -25,13 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 10,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 14,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 6,
 				"parent" : 0
 			}
 		]
@@ -58,6 +65,19 @@
 				{
 					"backtrace" : 2,
 					"define" : "BOOST_PROGRAM_OPTIONS_DYN_LINK"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/glib-2.0"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/lib/x86_64-linux-gnu/glib-2.0/include"
 				}
 			],
 			"language" : "CXX",
@@ -100,6 +120,10 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lglib-2.0",
 				"role" : "libraries"
 			}
 		],

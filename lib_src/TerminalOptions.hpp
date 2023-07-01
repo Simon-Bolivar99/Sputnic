@@ -32,10 +32,16 @@ class TerminalOptions {
     inline const std::string & getEndTime() {return myEndDateTime;}
     inline const std::string & getCoord() {return myCoord;};
     inline const double & getDegress(){return myDegress;}
+    std::string print(std::string str);
+ 
+   
 
     protected:
     void setup();
     bool validateFiles();
+
+    
+    
 
     private:
     TerminalOptions(const TerminalOptions &rhs);

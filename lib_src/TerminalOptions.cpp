@@ -1,9 +1,12 @@
 
 #include <iostream>
+#include <string>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/path.hpp>
 #include <boost/filesystem/operations.hpp>
 #include <boost/algorithm/string/trim.hpp>
+#include <boost/date_time/posix_time/posix_time.hpp>
+#include <boost/date_time/posix_time/posix_time_types.hpp>
 namespace fs = boost::filesystem;
 
 #include "TerminalOptions.hpp"
@@ -11,8 +14,8 @@ namespace fs = boost::filesystem;
 TerminalOptions::TerminalOptions():
     myOptions       (""),
     myInputFile     (""),
-    myStartDateTime (""),
-    myEndDateTime   (""),
+    myStartDateTime ("2002-01-20-23:59:59"),
+    myEndDateTime   ("2002-01-21-00:00:00"),
     myCoord         (""),
     myDegress       (0.0)
    {
@@ -27,8 +30,8 @@ void TerminalOptions::setup()
     options.add_options()
     ("help,h","Display help menu.")
     ("file,f", po::value<std::string>(&myInputFile),"User-specified value")
-    ("start,s",po::value<std::string>(&myStartDateTime),"Start time")
-    ("end,s", po::value<std::string>(&myEndDateTime),"End time")
+    ("start,s",po::value<std::string>(&myStartDateTime),"Start time         [YYYY-MM-DD-HH:MM:SS]")
+    ("end,e", po::value<std::string>(&myEndDateTime),"End time           [YYYY-MM-DD-HH:MM:SS]")
     ("crd,c",po::value<std::string>(&myCoord),"Coordinate latitude longitude height")
     ("deg,d",po::value<double> (&myDegress),"Degress");
     myOptions.add(options);
@@ -83,3 +86,15 @@ bool TerminalOptions::validateFiles(){
     }
     return true;
 }
+
+
+
+std::string TerminalOptions::print(std::string str){
+    str[10] = 'T';
+    str.erase(std::remove(str.begin(),str.end(),'-'),str.end());
+    str.erase(std::remove(str.begin(),str.end(),':'),str.end());
+    boost::posix_time::ptime t(boost::posix_time::from_iso_string(str));
+
+    return boost::posix_time::to_simple_string(t);
+}
+

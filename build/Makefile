@@ -210,6 +210,30 @@ lib_src/sgp4sdp4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4sdp4.dir/build.make CMakeFiles/sgp4sdp4.dir/lib_src/sgp4sdp4.cpp.s
 .PHONY : lib_src/sgp4sdp4.cpp.s
 
+lib_src/sgp_in.o: lib_src/sgp_in.cpp.o
+.PHONY : lib_src/sgp_in.o
+
+# target to build an object file
+lib_src/sgp_in.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4sdp4.dir/build.make CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.o
+.PHONY : lib_src/sgp_in.cpp.o
+
+lib_src/sgp_in.i: lib_src/sgp_in.cpp.i
+.PHONY : lib_src/sgp_in.i
+
+# target to preprocess a source file
+lib_src/sgp_in.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4sdp4.dir/build.make CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.i
+.PHONY : lib_src/sgp_in.cpp.i
+
+lib_src/sgp_in.s: lib_src/sgp_in.cpp.s
+.PHONY : lib_src/sgp_in.s
+
+# target to generate assembly for a file
+lib_src/sgp_in.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4sdp4.dir/build.make CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.s
+.PHONY : lib_src/sgp_in.cpp.s
+
 lib_src/sgp_math.o: lib_src/sgp_math.cpp.o
 .PHONY : lib_src/sgp_math.o
 
@@ -233,6 +257,30 @@ lib_src/sgp_math.s: lib_src/sgp_math.cpp.s
 lib_src/sgp_math.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4sdp4.dir/build.make CMakeFiles/sgp4sdp4.dir/lib_src/sgp_math.cpp.s
 .PHONY : lib_src/sgp_math.cpp.s
+
+lib_src/sgp_obs.o: lib_src/sgp_obs.cpp.o
+.PHONY : lib_src/sgp_obs.o
+
+# target to build an object file
+lib_src/sgp_obs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4sdp4.dir/build.make CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.o
+.PHONY : lib_src/sgp_obs.cpp.o
+
+lib_src/sgp_obs.i: lib_src/sgp_obs.cpp.i
+.PHONY : lib_src/sgp_obs.i
+
+# target to preprocess a source file
+lib_src/sgp_obs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4sdp4.dir/build.make CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.i
+.PHONY : lib_src/sgp_obs.cpp.i
+
+lib_src/sgp_obs.s: lib_src/sgp_obs.cpp.s
+.PHONY : lib_src/sgp_obs.s
+
+# target to generate assembly for a file
+lib_src/sgp_obs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4sdp4.dir/build.make CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.s
+.PHONY : lib_src/sgp_obs.cpp.s
 
 lib_src/sgp_time.o: lib_src/sgp_time.cpp.o
 .PHONY : lib_src/sgp_time.o
@@ -300,9 +348,15 @@ help:
 	@echo "... lib_src/sgp4sdp4.o"
 	@echo "... lib_src/sgp4sdp4.i"
 	@echo "... lib_src/sgp4sdp4.s"
+	@echo "... lib_src/sgp_in.o"
+	@echo "... lib_src/sgp_in.i"
+	@echo "... lib_src/sgp_in.s"
 	@echo "... lib_src/sgp_math.o"
 	@echo "... lib_src/sgp_math.i"
 	@echo "... lib_src/sgp_math.s"
+	@echo "... lib_src/sgp_obs.o"
+	@echo "... lib_src/sgp_obs.i"
+	@echo "... lib_src/sgp_obs.s"
 	@echo "... lib_src/sgp_time.o"
 	@echo "... lib_src/sgp_time.i"
 	@echo "... lib_src/sgp_time.s"

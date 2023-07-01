@@ -125,12 +125,42 @@ CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/TerminalOptions.cpp" -o CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.s
 
+CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.o: CMakeFiles/sgp4sdp4.dir/flags.make
+CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.o: ../lib_src/sgp_obs.cpp
+CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.o: CMakeFiles/sgp4sdp4.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.o -MF CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.o.d -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.o -c "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_obs.cpp"
+
+CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_obs.cpp" > CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.i
+
+CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_obs.cpp" -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.s
+
+CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.o: CMakeFiles/sgp4sdp4.dir/flags.make
+CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.o: ../lib_src/sgp_in.cpp
+CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.o: CMakeFiles/sgp4sdp4.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.o -MF CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.o.d -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.o -c "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_in.cpp"
+
+CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_in.cpp" > CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.i
+
+CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/artyom/Документы/C++ PROJECT/SPUTNIC/lib_src/sgp_in.cpp" -o CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.s
+
 # Object files for target sgp4sdp4
 sgp4sdp4_OBJECTS = \
 "CMakeFiles/sgp4sdp4.dir/lib_src/sgp4sdp4.cpp.o" \
 "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_math.cpp.o" \
 "CMakeFiles/sgp4sdp4.dir/lib_src/sgp_time.cpp.o" \
-"CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o"
+"CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o" \
+"CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.o" \
+"CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.o"
 
 # External object files for target sgp4sdp4
 sgp4sdp4_EXTERNAL_OBJECTS =
@@ -139,9 +169,11 @@ libsgp4sdp4.a: CMakeFiles/sgp4sdp4.dir/lib_src/sgp4sdp4.cpp.o
 libsgp4sdp4.a: CMakeFiles/sgp4sdp4.dir/lib_src/sgp_math.cpp.o
 libsgp4sdp4.a: CMakeFiles/sgp4sdp4.dir/lib_src/sgp_time.cpp.o
 libsgp4sdp4.a: CMakeFiles/sgp4sdp4.dir/lib_src/TerminalOptions.cpp.o
+libsgp4sdp4.a: CMakeFiles/sgp4sdp4.dir/lib_src/sgp_obs.cpp.o
+libsgp4sdp4.a: CMakeFiles/sgp4sdp4.dir/lib_src/sgp_in.cpp.o
 libsgp4sdp4.a: CMakeFiles/sgp4sdp4.dir/build.make
 libsgp4sdp4.a: CMakeFiles/sgp4sdp4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libsgp4sdp4.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libsgp4sdp4.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/sgp4sdp4.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sgp4sdp4.dir/link.txt --verbose=$(VERBOSE)
 

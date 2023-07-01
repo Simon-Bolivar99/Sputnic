@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -rdynamic CMakeFiles/Sputnic.dir/main.cpp.o -o Sputnic  libsgp4sdp4.a /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.74.0 /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0 
