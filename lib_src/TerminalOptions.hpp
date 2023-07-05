@@ -3,6 +3,7 @@
 
 #include <string>
 #include <boost/program_options.hpp>
+#include "sgp4sdp4.hpp"
 
 namespace po = boost::program_options;
 
@@ -34,6 +35,7 @@ class TerminalOptions {
     inline const std::string & getCoord() {return myCoord;};
     inline const double & getDegress(){return myDegress;}
     std::string print(std::string str);
+
  
    
 

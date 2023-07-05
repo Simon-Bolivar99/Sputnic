@@ -5,6 +5,7 @@
 #define TEST_STEPS 5
 
 sat_t sat;
+
 typedef struct {
     double          t;
     double          x;
@@ -16,7 +17,8 @@ typedef struct {
 } dataset_t;
 
 
-const dataset_t expected[TEST_STEPS] = {
+
+  dataset_t expected[5] = {
     {0.0,
      2328.97048951, -5995.22076416, 1719.97067261,
      2.91207230, -0.98341546, -7.09081703},
@@ -62,6 +64,7 @@ int open_TLE(std::string filename,int line){
 
 
   select_ephemeris(&sat);
+
     
     return 0;
 }
@@ -154,10 +157,56 @@ double time_calculate(std::string time1){
 }
 
 
+int set_coord(geodetic_t *geodetic, std::string str){
+    
+    int count = 0;
+    double lat,lon,alt;
+    std::string tmp = " ";
+
+    for (int i = 0; i<str.length();i++){
+      if (str[i] == '.')
+        count++;
+    }
+    if (count <3)
+    return 1;
+    else{
+        
+        
+        int i = 0;
+        while (str[i] != '-'){
+            tmp += str[i];
+            i++;
+        }
+        lat = std::stod(tmp);
+        tmp = " ";
+        i++;
+        while (str[i] != '-'){
+            tmp += str[i];
+            i++;
+        }
+        lon = std::stod(tmp);
+        tmp = " ";
+        i++;
+        while (i != str.length()){
+            tmp += str[i];
+            i++;
+        }
+        alt = std::stod(tmp);
+
+        geodetic ->lat = lat;
+        geodetic -> lon = lon;
+        geodetic -> alt = alt;
+
+        return 0;
+      }
+      
+}
+
 int main(int argc, char* argv[]) 
 {
 
   TerminalOptions opts;
+  geodetic_t geo;
 
   TerminalOptions::statusReturn temp = opts.parse(argc, argv);
   if (TerminalOptions::OPTS_SUCESS == temp){
@@ -167,6 +216,26 @@ int main(int argc, char* argv[])
     std::cout<<"User endDateTime: " <<opts.getEndTime()<<std::endl;
     //std::cout<<"Number of lines: " << CountLineInFile(opts.getInputFile()) << std::endl;
     open_TLE(opts.getInputFile(), CountLineInFile(opts.getInputFile()));
+    if(set_coord(&geo, opts.getCoord())) std::cout << "Wrong coordinates - " <<" [" << opts.getCoord()<<"]"<< std::endl;
+    vector_t obs_pos, obs_vel;
+    obs_set_t obs_set;
+    obs_astro_t obs_astro;
+    Calculate_Obs(time_calculate(opts.getStartTime()),&obs_pos,&obs_vel , &geo, &obs_set);
+    Calculate_RADec_and_Obs(time_calculate(opts.getStartTime()),&obs_pos,&obs_vel , &geo, &obs_astro);
+    Calculate_User_PosVel(time_calculate(opts.getStartTime()), &geo , &obs_pos,&obs_vel );
+
+
+    SGP4(&sat , Epoch_Time(time_calculate(opts.getStartTime())));
+    Convert_Sat_State(&sat.pos, &sat.vel);
+    std::cout.setf(std::ios::fixed);
+    std::cout.precision(10); //0 - число символов после точки
+    //std::cout << "t:" <<Epoch_Time(time_calculate(opts.getStartTime())) << " x:" << sat.pos.x << " y:" << sat.pos.y << std::endl << sat.pos.z << " time:" << sat.tsince;
+    //std::cout << obs_pos.x << " " << obs_pos.y << " " << obs_pos.z << " " << obs_pos.w << std::endl;
+    //std::cout << obs_vel.x << " " << obs_vel.y << " " << obs_vel.z << " " << obs_vel.w << std::endl;
+    //std::cout << obs_set.az << " " << obs_set.el << obs_set.range << " " << obs_set.range_rate << std::endl;
+    //std::cout << obs_astro.dec << " " << obs_astro.ra << std::endl;
+
+    
   }
 else if ( TerminalOptions::OPTS_HELP == temp)
 {
@@ -175,11 +244,12 @@ else if ( TerminalOptions::OPTS_HELP == temp)
 else{
   std::cout<<"ERROR - problem with options" <<std::endl;
 }
-  std::cout << opts.print(opts.getStartTime()) << std::endl;
-  std::cout << opts.print(opts.getEndTime()) << std::endl;
-  
-   std::cout << Epoch_Time(time_calculate(opts.getEndTime()) - time_calculate(opts.getStartTime()))<< std::endl;
-  //std::cout << Fraction_of_Day(12, 15, 30) << std::endl;
+  /*std::cout.setf(std::ios::fixed);
+  std::cout.precision(40); //0 - число символов после точки
+   std::cout.precision(4); //0 - число символов после точки
+  */
+
+
   
   return 0;  
 }
