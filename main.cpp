@@ -48,24 +48,111 @@ int CountLineInFile(std::string filename){
   return count -1 ;
 }
 
-void open_TLE(std::string filename,int line){
+int open_TLE(std::string filename,int line){
   std::ifstream File;
   File.open(filename);
-  int count = -1;
   char tle_str[line][80];
-  char buff [1000];
 
  for (int i = 0; i < line;i++){
   File.getline(tle_str[i],80);
-  std::cout << "LINE [" << i << "] :" << tle_str[i] << std::endl;
  }
-  Get_Next_Tle_Set(tle_str, &sat.tle);
+  if (Get_Next_Tle_Set(tle_str, &sat.tle) != 1){ 
+    std::cout << "Format doesn`t match TLE" << std::endl;
+    return 1; }
 
 
   select_ephemeris(&sat);
-
-
+    
+    return 0;
 }
+
+
+double time_calculate(std::string time1){
+    tm times , timeEnd;
+    std::string tmp = "0";
+    
+    int i = 0;
+    while(time1[i] != '-'){
+      tmp += time1[i];
+      
+      i++;
+    }
+    
+    times.tm_year = std::stoi(tmp);
+   
+
+    i++;
+    tmp = "0";
+   
+    while(time1[i] != '-'){
+      tmp += time1[i];
+      
+      i++;
+    }
+
+    times.tm_mon = std::stoi(tmp);
+    
+
+    i++;
+    tmp = "0";
+    
+ while(time1[i] != '-'){
+      tmp += time1[i];
+  
+      i++;
+    }
+
+    times.tm_mday = std::stoi(tmp);
+    
+
+    i++;
+    tmp = "0";
+    
+ while(time1[i] != ':'){
+      tmp += time1[i];
+      
+      i++;
+    }
+
+    times.tm_hour = std::stoi(tmp);
+    
+    
+    i++;
+    tmp = "0";
+    
+ while(time1[i] != ':'){
+      tmp += time1[i];
+      
+      i++;
+    }
+
+    times.tm_min = std::stoi(tmp);
+    
+
+    i++;
+    tmp = "0";
+    
+
+ while(i != time1.length()){
+      tmp += time1[i];
+      
+      i++;
+    }
+
+    times.tm_sec = std::stoi(tmp);
+    
+
+    //std::cout << timeStart.tm_year << " " << timeStart.tm_mon << " " << timeStart.tm_mday << " " << timeStart.tm_hour << " " << 
+    //timeStart.tm_min << " " << timeStart.tm_sec << std::endl;
+    //std::cout << timeEnd.tm_year << " " << timeEnd.tm_mon << " " << timeEnd.tm_mday << " "<< timeEnd.tm_hour << " " << 
+    //timeEnd.tm_min << " " << timeEnd.tm_sec << std::endl;;
+    
+    //std::cout << Epoch_Time(Julian_Date(&times)) << std::endl;
+
+       //std::cout << Epoch_Time(Julian_Date(&times)) << std::endl;
+        return Julian_Date(&times);
+}
+
 
 int main(int argc, char* argv[]) 
 {
@@ -78,7 +165,7 @@ int main(int argc, char* argv[])
 
     std::cout<<"User startDateTime: " <<opts.getStartTime()<<std::endl;
     std::cout<<"User endDateTime: " <<opts.getEndTime()<<std::endl;
-    std::cout<<"Number of lines: " << CountLineInFile(opts.getInputFile()) << std::endl;
+    //std::cout<<"Number of lines: " << CountLineInFile(opts.getInputFile()) << std::endl;
     open_TLE(opts.getInputFile(), CountLineInFile(opts.getInputFile()));
   }
 else if ( TerminalOptions::OPTS_HELP == temp)
@@ -90,6 +177,9 @@ else{
 }
   std::cout << opts.print(opts.getStartTime()) << std::endl;
   std::cout << opts.print(opts.getEndTime()) << std::endl;
+  
+   std::cout << Epoch_Time(time_calculate(opts.getEndTime()) - time_calculate(opts.getStartTime()))<< std::endl;
+  //std::cout << Fraction_of_Day(12, 15, 30) << std::endl;
   
   return 0;  
 }

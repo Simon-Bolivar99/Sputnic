@@ -14,9 +14,9 @@ namespace fs = boost::filesystem;
 TerminalOptions::TerminalOptions():
     myOptions       (""),
     myInputFile     (""),
-    myStartDateTime ("2002-01-20-23:59:59"),
-    myEndDateTime   ("2002-01-21-00:00:00"),
-    myCoord         (""),
+    myStartDateTime ("2002-01-20-23:59:35"),
+    myEndDateTime   ("2002-01-21-01:14:30"),
+    myCoord         ("0,0 0,0 0,0"),
     myDegress       (0.0)
    {
     setup();
@@ -50,7 +50,7 @@ TerminalOptions::statusReturn TerminalOptions::parse(int argc, char* argv[]){
             std::cout<<myOptions<<std::endl;
             return OPTS_HELP;
         }
-        if (!(0 < varMap.count("file"))){
+        if (!(0 < varMap.count("file")) ){
             std::cout<< "ERROR - Input file must be specified!!!" << std::endl; 
             std::cout<< myOptions<<std::endl;
             return OPTS_FAILURE;
@@ -68,7 +68,7 @@ TerminalOptions::statusReturn TerminalOptions::parse(int argc, char* argv[]){
         }
     }
     catch(std::exception &e){
-        std::cout<<"ERROR - paseing error: " <<e.what() << std::endl;
+        std::cout<<"ERROR - parsing error: " <<e.what() << std::endl;
         ret = OPTS_FAILURE;
     }
     catch(...){
@@ -97,4 +97,5 @@ std::string TerminalOptions::print(std::string str){
 
     return boost::posix_time::to_simple_string(t);
 }
+
 

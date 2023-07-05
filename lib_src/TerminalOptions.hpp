@@ -3,6 +3,7 @@
 
 #include <string>
 #include <boost/program_options.hpp>
+
 namespace po = boost::program_options;
 
 /*
@@ -11,7 +12,7 @@ namespace po = boost::program_options;
 [-s| --start] ARG (str)              Start time
 [-e| --end  ] ARG (str)              End time
 [-c| --crd  ] ARG (str)              latitude longitude height
-[-d| --deg  ] AGR (str)
+[-d| --deg  ] AGR (double)
 */
 
 class TerminalOptions {
