@@ -16,7 +16,7 @@ TerminalOptions::TerminalOptions():
     myInputFile     (""),
     myStartDateTime ("2002-01-20-23:59:35"),
     myEndDateTime   ("2002-01-21-01:17:30"),
-    myCoord         ("1.2-3.3-2.9"),
+    myCoord         ("59.93506-30.33188-2.9"),
     myDegress       (0.0)
    {
     setup();
@@ -32,7 +32,7 @@ void TerminalOptions::setup()
     ("file,f", po::value<std::string>(&myInputFile),"User-specified value")
     ("start,s",po::value<std::string>(&myStartDateTime),"Start time         [YYYY-MM-DD-HH:MM:SS]")
     ("end,e", po::value<std::string>(&myEndDateTime),"End time           [YYYY-MM-DD-HH:MM:SS]")
-    ("crd,c",po::value<std::string>(&myCoord),"Coordinate latitude longitude height [x.x x.x x.x]")
+    ("crd,c",po::value<std::string>(&myCoord),"Coordinate latitude longitude height [x.x-x.x-x.x]")
     ("deg,d",po::value<double> (&myDegress),"Degress");
     myOptions.add(options);
 
