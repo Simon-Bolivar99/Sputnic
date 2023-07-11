@@ -7,7 +7,10 @@
 #include <boost/algorithm/string/trim.hpp>
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <boost/date_time/posix_time/posix_time_types.hpp>
+
 namespace fs = boost::filesystem;
+using namespace boost::gregorian;
+using namespace boost::posix_time;
 
 #include "TerminalOptions.hpp"
 
@@ -16,8 +19,8 @@ TerminalOptions::TerminalOptions():
     myInputFile     (""),
     myStartDateTime ("2002-01-20-23:59:35"),
     myEndDateTime   ("2002-01-21-01:17:30"),
-    myCoord         ("59.93506-30.33188-2.9"),
-    myDegress       (0.0)
+    myCoord         ("60.0-30.0-0.0"),
+    myDegress       (45.0)
    {
     setup();
    }
@@ -93,8 +96,20 @@ std::string TerminalOptions::print(std::string str){
     str[10] = 'T';
     str.erase(std::remove(str.begin(),str.end(),'-'),str.end());
     str.erase(std::remove(str.begin(),str.end(),':'),str.end());
-    boost::posix_time::ptime t(boost::posix_time::from_iso_string(str));
+    ptime t(from_iso_string(str));
 
-    return boost::posix_time::to_simple_string(t);
+    return to_simple_string(t);
 }
 
+std::tm TerminalOptions::time_iter(tm time, int sec){
+    int year, mon, day ;
+    tm mt = time;
+    ptime xTime = ptime_from_tm(mt); 
+    time_iterator xIt(xTime, seconds(sec));
+    ++xIt;
+    std::string str = to_simple_string(*xIt);
+    xTime = *xIt;
+    mt = to_tm(xTime);
+    return mt;
+    
+    }
