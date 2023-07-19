@@ -34,9 +34,10 @@ class TerminalOptions {
     inline const std::string & getEndTime() {return myEndDateTime;}
     inline const std::string & getCoord() {return myCoord;};
     inline const double & getDegress(){return myDegress;}
+    std::string time_string(tm time);
     std::string print(std::string str);
     std::tm time_iter(tm time, int sec);
- 
+    
    
 
     protected:

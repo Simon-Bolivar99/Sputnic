@@ -17,10 +17,10 @@ using namespace boost::posix_time;
 TerminalOptions::TerminalOptions():
     myOptions       (""),
     myInputFile     (""),
-    myStartDateTime ("2002-01-20-23:59:35"),
-    myEndDateTime   ("2002-01-21-01:17:30"),
+    myStartDateTime ("2023-01-01-00:00:00"),
+    myEndDateTime   ("2023-01-02-00:00:00"),
     myCoord         ("60.0-30.0-0.0"),
-    myDegress       (45.0)
+    myDegress       (30.0)
    {
     setup();
    }
@@ -29,14 +29,14 @@ TerminalOptions::~TerminalOptions(){}
 
 void TerminalOptions::setup()
 {
-    po::options_description options( "Program Options" );
+    po::options_description options( "Параметры" );
     options.add_options()
-    ("help,h","Display help menu.")
-    ("file,f", po::value<std::string>(&myInputFile),"User-specified value")
-    ("start,s",po::value<std::string>(&myStartDateTime),"Start time         [YYYY-MM-DD-HH:MM:SS]")
-    ("end,e", po::value<std::string>(&myEndDateTime),"End time           [YYYY-MM-DD-HH:MM:SS]")
-    ("crd,c",po::value<std::string>(&myCoord),"Coordinate latitude longitude height [x.x-x.x-x.x]")
-    ("deg,d",po::value<double> (&myDegress),"Degress");
+    ("help,h","Меню параметров.")
+    ("file,f", po::value<std::string>(&myInputFile),"Путь к файлу TLE")
+    ("start,s",po::value<std::string>(&myStartDateTime),"Время старта       [YYYY-MM-DD-HH:MM:SS]")
+    ("end,e", po::value<std::string>(&myEndDateTime),"Время финиша       [YYYY-MM-DD-HH:MM:SS]")
+    ("crd,c",po::value<std::string>(&myCoord),"Координаты наблюдателя: широта долгота высота [x.x-x.x-x.x]")
+    ("deg,d",po::value<double> (&myDegress),"Угол наблюдения");
     myOptions.add(options);
 
 }
@@ -54,7 +54,7 @@ TerminalOptions::statusReturn TerminalOptions::parse(int argc, char* argv[]){
             return OPTS_HELP;
         }
         if (!(0 < varMap.count("file")) ){
-            std::cout<< "ERROR - Input file must be specified!!!" << std::endl; 
+            std::cout<< "ОШИБКА - Отсутвует входной файл!!!" << std::endl; 
             std::cout<< myOptions<<std::endl;
             return OPTS_FAILURE;
         }
@@ -66,16 +66,13 @@ TerminalOptions::statusReturn TerminalOptions::parse(int argc, char* argv[]){
             ret = validateFiles()? OPTS_SUCESS : OPTS_FAILURE;
 
         }
-        if (!varMap["start"].defaulted()) {
-            std::cout<< "Warning - Default value for User-time1 overwtiren to " << myStartDateTime << std::endl;
-        }
     }
     catch(std::exception &e){
-        std::cout<<"ERROR - parsing error: " <<e.what() << std::endl;
+        std::cout<<"ОШИБКА - ошибка парсинга: " <<e.what() << std::endl;
         ret = OPTS_FAILURE;
     }
     catch(...){
-        std::cout<<"ERROR - parsing error (unknow type)." << std::endl;
+        std::cout<<"ОШИБКА- ошибка парсинга (неизвестная ошибка)." << std::endl;
         ret = OPTS_FAILURE;
     }
     return ret;
@@ -84,7 +81,7 @@ TerminalOptions::statusReturn TerminalOptions::parse(int argc, char* argv[]){
 bool TerminalOptions::validateFiles(){
     if(!boost::filesystem::is_regular_file(myInputFile))
     {
-        std::cout<<"ERROR - Input file provided does not exist! [" << myInputFile <<"]"<<std::endl;
+        std::cout<<"ОШИБКА - файл по данному пути не найден! [" << myInputFile <<"]"<<std::endl;
         return false;
     }
     return true;
@@ -92,24 +89,26 @@ bool TerminalOptions::validateFiles(){
 
 
 
-std::string TerminalOptions::print(std::string str){
-    str[10] = 'T';
-    str.erase(std::remove(str.begin(),str.end(),'-'),str.end());
-    str.erase(std::remove(str.begin(),str.end(),':'),str.end());
-    ptime t(from_iso_string(str));
-
-    return to_simple_string(t);
-}
-
+//итерация времени в секундах
 std::tm TerminalOptions::time_iter(tm time, int sec){
-    int year, mon, day ;
     tm mt = time;
+    mt.tm_mon --;
     ptime xTime = ptime_from_tm(mt); 
     time_iterator xIt(xTime, seconds(sec));
     ++xIt;
     std::string str = to_simple_string(*xIt);
     xTime = *xIt;
     mt = to_tm(xTime);
+    mt.tm_mon++;
     return mt;
     
     }
+
+//перевод тм времени в формат boost::posix_time
+std::string TerminalOptions::time_string(tm time){
+    tm mt = time;
+    ptime xTime = ptime_from_tm(mt);
+    std::string str = to_simple_string(xTime);
+
+    return str;
+}
