@@ -29,11 +29,11 @@ class TerminalOptions {
     ~TerminalOptions();
     statusReturn parse(int argc, char * argv[]);
 
-    inline const std::string & getInputFile() const {return myInputFile;}
-    inline const std::string & getStartTime() {return myStartDateTime;}
-    inline const std::string & getEndTime() {return myEndDateTime;}
-    inline const std::string & getCoord() {return myCoord;};
-    inline const double & getDegress(){return myDegress;}
+    inline const std::string & getInputFile()       {return myInputFile;}
+    inline const std::string & getStartTime()       {return myStartDateTime;}
+    inline const std::string & getEndTime()         {return myEndDateTime;}
+    inline const std::string & getCoord()           {return myCoord;}
+    inline const double      & getDegress()         {return myDegress;}
     std::string time_string(tm time);
     std::string print(std::string str);
     std::tm time_iter(tm time, int sec);
