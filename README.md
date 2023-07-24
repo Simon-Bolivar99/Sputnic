@@ -61,45 +61,21 @@ Sputnic - консольное приложение для расчета инт
 
 РЕЗУЛЬТАТ:
 
-[GLOBALSTAR M006]   [ANGOSAT 2]
-Старт:   2023-Jan-01 05:01:36
-Финиш:   2023-Jan-01 05:04:01
+[GLOBALSTAR M044]   [GLOBALSTAR M054]
+Старт:   2023-Jan-01 11:57:24
+Финиш:   2023-Jan-01 11:59:02
 
-[GLOBALSTAR M054]   [ANGOSAT 2]
-Старт:   2023-Jan-01 08:12:04
-Финиш:   2023-Jan-01 08:16:59
+[GLOBALSTAR M044]   [GLOBALSTAR M054]
+Старт:   2023-Jan-01 15:44:27
+Финиш:   2023-Jan-01 15:50:46
 
-[GLOBALSTAR M014]   [ANGOSAT 2]
-Старт:   2023-Jan-01 08:32:54
-Финиш:   2023-Jan-01 08:37:27
+[GLOBALSTAR M014]   [GLOBALSTAR M006]
+Старт:   2023-Jan-01 16:20:43
+Финиш:   2023-Jan-01 16:21:19
 
-[GLOBALSTAR M006]   [ANGOSAT 2]
-Старт:   2023-Jan-01 08:46:03
-Финиш:   2023-Jan-01 08:57:40
-
-[GLOBALSTAR M044]   [ANGOSAT 2]
-Старт:   2023-Jan-01 11:50:37
-Финиш:   2023-Jan-01 12:09:46
-
-[GLOBALSTAR M014]   [ANGOSAT 2]
-Старт:   2023-Jan-01 12:18:10
-Финиш:   2023-Jan-01 12:30:17
-
-[GLOBALSTAR M006]   [ANGOSAT 2]
-Старт:   2023-Jan-01 12:33:03
-Финиш:   2023-Jan-01 12:48:48
-
-[GLOBALSTAR M044]   [ANGOSAT 2]
-Старт:   2023-Jan-01 15:37:05
-Финиш:   2023-Jan-01 16:00:47
-
-[GLOBALSTAR M014]   [ANGOSAT 2]
-Старт:   2023-Jan-01 16:05:17
-Финиш:   2023-Jan-01 16:39:16
-
-[GLOBALSTAR M049]   [ANGOSAT 2]
-Старт:   2023-Jan-01 17:31:40
-Финиш:   2023-Jan-01 17:41:15
+[GLOBALSTAR M006]   [GLOBALSTAR M063]
+Старт:   2023-Jan-01 16:26:12
+Финиш:   2023-Jan-01 16:28:43
 
 [GLOBALSTAR M047]   [GLOBALSTAR M032]
 Старт:   2023-Jan-01 18:19:54
