@@ -5,21 +5,21 @@
 //неправильно инициализирую список инициализации конструктора
 // user_class::user_class(): time_start(...), time_end(...), ...
 user_class::user_class(std::string filename):
+
 time_start        (time_parse(getStartTime())),
 time_end          (time_parse(getEndTime())),
 coord             (getCoord()),
 two_sat           (false),
 sec_iter          (false),
 vision_index      (0),
-time_iter         (Julian_Date(&time_start)),
+time_itr          (Julian_Date(&time_start)),
 rad_degress       (Radians(getDegress())),
-file              (filename)
-
+file              (filename),
+sat_vec           (read_tle(file,count_line_in_file(file)))
 {
 
-    std::replace(coord.begin(), coord.end(), '-', ' ');
-    //read_tle(getInputFile(), count_line_in_file(getInputFile()));
-    if(set_coord(&geo, getCoord())) std::cout << "Неправильные координаты - " <<" [" << getCoord()<<"]"<< std::endl;
+  std::replace(coord.begin(), coord.end(), '-', ' ');
+  if(set_coord(&geo, getCoord())) std::cout << "Неправильные координаты - " <<" [" << getCoord()<<"]"<< std::endl;
 
 }
 
@@ -52,11 +52,11 @@ tm times;
 
 int user_class::set_coord(geodetic_t *geodetic, std::string str)
 {
-    int count = 0;
+  int count = 0;
   std::string tmp [3];
   for (int i = 0; i<str.length();i++)
   {
-    if (str[i] == '-')
+    if (str[i] == '-' || str[i] == ' ')
     count++;
   }
   if (count < 2) return 1;
@@ -157,10 +157,65 @@ std::vector <sat_t> user_class::sgp4_tle (std::vector <sat_t> sat_vec, double ts
 
 void user_class::calculate_sat_duration()
 {
-    std::cout<<"Файл TLE: "        << file           << std::endl;
-    std::cout<<"Время старта:    " << getStartTime() << std::endl;
-    std::cout<<"Время финиша:    " << getEndTime()   << std::endl;
-    std::cout<<"Координаты:      " << coord          << std::endl;
-    std::cout<<"Угол наблюдения: " << getDegress()   << std::endl;
-    
+  
+  std:: vector <int> vision;
+  for (int i =0; i< sat_vec.size();i++)
+    vision.push_back(0);
+  tm time_tmp; 
+  while((time_itr <= Julian_Date(&time_end) ))
+  {
+    sat_vec = sgp4_tle(sat_vec, ThetaG_JD(time_itr));         
+    for (int i = 0; i < sat_vec.size();i++)
+    {
+      Calculate_Obs(ThetaG_JD(time_itr), &sat_vec[i].pos, &sat_vec[i].vel, &geo, &obs_t);
+      if(obs_t.el >= rad_degress)
+      {         
+        vision[i] = 1;
+        sec_iter = true;
+      }
+      if(obs_t.el <= rad_degress && vision[i] == 1)
+      {         
+        vision[i] = 0;
+      }
+    } 
+ 
+    if (is_vision(vision) > 1 && two_sat == false)
+    {
+      vis_interval_vec.push_back(interval);
+      Date_Time(time_itr, &time_tmp);
+      vis_interval_vec[vision_index].start = time_tmp;
+      vis_interval_vec[vision_index].end = time_end;
+      vis_interval_vec[vision_index].name1 = sat_vec[vision_pos(0,vision)].tle.sat_name;
+      vis_interval_vec[vision_index].name2 = sat_vec[vision_pos(vision_pos(0,vision)+1,vision)].tle.sat_name;
+      two_sat = true;
+    }
+    if(is_vision(vision) <= 1 && two_sat == true)
+    {
+      two_sat = false;
+      Date_Time(time_itr, &time_tmp);
+      vis_interval_vec[vision_index].end = time_tmp;
+      sec_iter = false;
+      vision_index++;
+    }
+    sec_iter == true? time_start = time_iter(time_start, 1) : time_start = time_iter(time_start, 60);
+    time_itr = Julian_Date(&time_start);
+  }
+}
+
+void user_class::print_result()
+{
+  std::cout<<"Файл TLE: "        << file           << std::endl;
+  std::cout<<"Время старта:    " << getStartTime() << std::endl;
+  std::cout<<"Время финиша:    " << getEndTime()   << std::endl;
+  std::cout<<"Координаты:      " << coord          << std::endl;
+  std::cout<<"Угол наблюдения: " << getDegress()   << std::endl;
+
+  calculate_sat_duration();
+  std::cout << "\nРЕЗУЛЬТАТ:" <<std::endl;
+  for (int i = 0; i < vis_interval_vec.size();i++)
+  {
+    std::cout <<"\n[" << vis_interval_vec[i].name1 << "]" <<"   [" << vis_interval_vec[i].name2 << "]" << std::endl;
+    std::cout <<"Старт:   " <<  time_string(vis_interval_vec[i].start)<<std::endl;
+    std::cout <<"Финиш:   " <<  time_string(vis_interval_vec[i].end)<<std::endl;          
+  }
 }

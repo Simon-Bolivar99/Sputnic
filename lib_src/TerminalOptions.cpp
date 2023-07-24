@@ -34,7 +34,7 @@ void TerminalOptions::setup()
     ("help,h","Меню параметров.")
     ("file,f", po::value<std::string>(&myInputFile),"Путь к файлу TLE")
     ("start,s",po::value<std::string>(&myStartDateTime),"Время старта       [YYYY-MM-DD-HH:MM:SS]")
-    ("end,e", po::value<std::string>(&myEndDateTime),"Время финиша          [YYYY-MM-DD-HH:MM:SS]")
+    ("end,e", po::value<std::string>(&myEndDateTime),"Время финиша       [YYYY-MM-DD-HH:MM:SS]")
     ("crd,c",po::value<std::string>(&myCoord),"Координаты наблюдателя: широта долгота высота [x.x-x.x-x.x]")
     ("deg,d",po::value<double> (&myDegress),"Угол наблюдения");
     myOptions.add(options);
