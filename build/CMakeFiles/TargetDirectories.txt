@@ -1,6 +1,0 @@
-/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/sgp4sdp4.dir
-/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/main.dir
-/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/package.dir
-/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/package_source.dir
-/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/edit_cache.dir
-/home/artyom/Документы/C++ PROJECT/SPUTNIC/build/CMakeFiles/rebuild_cache.dir

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libTerminalOptions.a CMakeFiles/TerminalOptions.dir/lib_src/sgp4sdp4.cpp.o CMakeFiles/TerminalOptions.dir/lib_src/sgp_math.cpp.o CMakeFiles/TerminalOptions.dir/lib_src/sgp_time.cpp.o CMakeFiles/TerminalOptions.dir/lib_src/TerminalOptions.cpp.o
-/usr/bin/ranlib libTerminalOptions.a
