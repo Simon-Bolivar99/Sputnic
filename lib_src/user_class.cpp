@@ -2,8 +2,6 @@
 #include "user_class.hpp"
 #include <iostream>
 
-//неправильно инициализирую список инициализации конструктора
-// user_class::user_class(): time_start(...), time_end(...), ...
 user_class::user_class(std::string filename):
 
 time_start        (time_parse(getStartTime())),
